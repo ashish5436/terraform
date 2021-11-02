@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "ap-south-1"
-  access_key = "AKIAZS6HQ2UREBMRMZ77"
-  secret_key = "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"
+  access_key = "AKIAZS6HQ2URKA3C4U7R"
+  secret_key = "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"
 }
 # # 1. Create vpc
 resource "aws_vpc" "dev-vpc" {
