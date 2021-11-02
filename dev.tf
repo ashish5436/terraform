@@ -13,11 +13,11 @@ resource "aws_vpc" "dev-vpc" {
 
 # # 2. Create Internet Gateway
 resource "aws_internet_gateway" "gw" {
-   vpc_id = aws_vpc.prod-vpc.id
+   vpc_id = aws_vpc.dev-vpc.id
 }
 # # 3. Create Custom Route Table
 resource "aws_route_table" "dev-route-table" {
-   vpc_id = aws_vpc.prod-vpc.id
+   vpc_id = aws_vpc.dev-vpc.id
 
    route {
      cidr_block = "0.0.0.0/0"
